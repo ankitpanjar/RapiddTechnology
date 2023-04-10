@@ -1,0 +1,26 @@
+<!-- <h3>get method</h3> -->
+<!-- {{getValue | json}} -->
+<div style="text-align: center;">
+    <!-- <h1>call api</h1> -->
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>EmployeeName</th>
+            <th>StarTimeUtc</th>
+            <th>EndTimeUtc</th>
+            <th>TotalWork</th>
+        </tr>
+        <tr *ngFor="let data of getValue">
+            <td>{{data.Id}}</td>
+            <td>{{data.EmployeeName}}</td>
+            <td>{{data.StarTimeUtc}}</td>
+            <td>{{data.EndTimeUtc}}</td>
+            <td >{{data}}</td>
+            <!-- <td>{{ dates.date1 | date }}</td> -->
+            <!-- <td>{{ dates.date2 | date }}</td> -->
+            <!-- <td>{{ calculateSum() | date }}</td> -->
+            <!-- <td *ngFor="let val of gettime">{{val.diffHour}}</td> -->
+            <!-- <td *ngFor="let val of gettime">{{calculateDiff}}</td> -->
+        </tr>
+    </table>
+</div>
